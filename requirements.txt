@@ -1,0 +1,6 @@
+fastapi              # Wajib untuk backend API
+uvicorn              # Wajib sebagai ASGI server buat jalankan FastAPI
+matplotlib           # Opsional, aman saja kalau mau simpan — kalau nanti kamu mau ekspor PNG grafik, ini bisa dipakai
+numpy                # Wajib untuk kalkulasi matematika kita
+scipy                # Wajib untuk distribusi channel model (Nakagami-m, Shadowed-Rician, dll.)
+python-multipart     # Aman untuk file upload atau future-proof kalau mau kirim data form/file ke backend

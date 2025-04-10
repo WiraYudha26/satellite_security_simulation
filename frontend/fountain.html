@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fountain Code Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fountain Code Simulation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="input-group">
+        <label for="sourcePackets">Total Source Packets:</label>
+        <input type="number" id="sourcePackets" value="50" min="1" />
+
+        <button onclick="simulateFountainCode()">Run Simulation</button>
+    </div>
+
+    <canvas id="fountainChart"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Channel Model Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Channel Model Simulation 📡</h1>
+        <p>(Shadowed‑Rician & Nakagami‑m Channel Model)</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <section class="input-group">
+
+        <!-- Baris untuk input SNR -->
+        <div class="input-row">
+            <label for="snrMin">SNR Min (dB):</label>
+            <input type="number" id="snrMin" value="0" step="1">
+
+            <label for="snrMax">SNR Max (dB):</label>
+            <input type="number" id="snrMax" value="20" step="1">
+
+            <label for="snrStep">SNR Step (dB):</label>
+            <input type="number" id="snrStep" value="1" step="1">
+        </div>
+
+        <!-- Baris untuk input parameter channel model -->
+        <div class="input-row">            
+            <label for="kFactor">K-Factor (Shadowed-Rician):</label>
+            <input type="number" id="kFactor" value="3" step="0.1">
+
+            <label for="mParameter">m-Parameter (Nakagami-m):</label>
+            <input type="number" id="mParameter" value="2" step="0.1">
+        </div>
+
+        <button id="simulate-channel-model" onclick="runChannelModelSimulation()">Run Simulation</button>
+    </section>
+
+    <section class="chart-section channel-chart">
+        <h2>Shadowed‑Rician Capacity</h2>
+        <canvas id="shadowedRicianChart"></canvas>
+    </section>
+
+    <section class="chart-section channel-chart">
+        <h2>Nakagami‑m Capacity</h2>
+        <canvas id="nakagamiChart"></canvas>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

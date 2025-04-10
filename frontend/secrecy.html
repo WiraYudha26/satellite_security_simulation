@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Secrecy Capacity</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Secrecy Capacity Analysis 🔒</h1>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <div class="input-group">
+        <label>SNR Min (dB):</label>
+        <input type="number" id="snrMin" value="0" />
+        <label>SNR Max (dB):</label>
+        <input type="number" id="snrMax" value="20" />
+        <label>SNR Step:</label>
+        <input type="number" id="snrStep" value="1" />
+        <button onclick="simulateSecrecy()">Run Simulation</button>
+    </div>
+
+    <canvas id="chartCanvas"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
