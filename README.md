@@ -1,10 +1,10 @@
-Cara menjalankan simulasi:
-1. Download project
-2. Extract All
-3. Buka Folder menggunakan VSCode
-4. Buka terminal (ctrl + ~), ketik cd backend
-5. Pada terminal/backend, ketik uvicorn main:app --reload
-6. Buka folder frontend
-7. Klik kanan pada index.html
-8. Pilih Open with Live Server
-9. Selamat mencoba!
+How to run the simulation:
+1. Download the project
+2. Extract all files
+3. Open the folder using VSCode
+4. Open the terminal (ctrl + ~), type cd backend
+5. In the terminal/backend, type uvicorn main:app --reload
+6. Open the frontend folder
+7. Right-click on index.html
+8. Select Open with Live Server
+9. Good luck!
